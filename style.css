@@ -1,0 +1,67 @@
+.container {
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px solid #333;
+  }
+  
+  .tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 96px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #ccc;
+    margin: 2px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  .tile-2 {
+    background-color: #eee4da;
+    color: #776e65;
+  }
+  
+  .tile-4 {
+    background-color: #ede0c8;
+    color: #776e65;
+  }
+  
+  /* Define additional tile classes for numbers 8, 16, 32, 64, 128, 256, 512, 1024, and 2048 */
+  /* You can customize the colors and styles as per your preference */
+  
+  /* Animation styles for tile movements */
+  .tile.move-up,
+  .tile.move-down,
+  .tile.move-left,
+  .tile.move-right {
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .tile.move-up {
+    transform: translateY(-100%);
+  }
+  
+  .tile.move-down {
+    transform: translateY(100%);
+  }
+  
+  .tile.move-left {
+    transform: translateX(-100%);
+  }
+  
+  .tile.move-right {
+    transform: translateX(100%);
+  }
+  
