@@ -38,10 +38,9 @@
     color: #776e65;
   }
   
-  /* Define additional tile classes for numbers 8, 16, 32, 64, 128, 256, 512, 1024, and 2048 */
-  /* You can customize the colors and styles as per your preference */
+  /* can define additional tile classes for numbers 8, 16, 32, 64, 128, 256, 512, 1024, and 2048 */
   
-  /* Animation styles for tile movements */
+  /* animation styles for tile movements */
   .tile.move-up,
   .tile.move-down,
   .tile.move-left,
